@@ -1,0 +1,2 @@
+export 'package:nuca/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/splash.controller.binding.dart'; 
