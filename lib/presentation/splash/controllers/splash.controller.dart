@@ -1,23 +1,20 @@
+import 'dart:async';
+
 import 'package:get/get.dart';
+import 'package:nuca/presentation/login/pra_login.screen.dart';
 
 class SplashController extends GetxController {
-  //TODO: Implement SplashController
-
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
+    splashscreenStart();
+    // pref!.clear();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+  splashscreenStart() async {
+    var duration = const Duration(seconds: 2);
+    return Timer(duration, () {
+      Get.offAll(() => const PraLoginScreen());
+    });
   }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }

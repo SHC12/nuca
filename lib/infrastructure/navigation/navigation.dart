@@ -7,6 +7,8 @@ import '../../presentation/screens.dart';
 import 'bindings/controllers/controllers_bindings.dart';
 import 'routes.dart';
 
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables
+
 class EnvironmentsBadge extends StatelessWidget {
   final Widget child;
   EnvironmentsBadge({required this.child});
@@ -35,6 +37,26 @@ class Nav {
       name: Routes.SPLASH,
       page: () => const SplashScreen(),
       binding: SplashControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => LoginScreen(),
+      binding: LoginControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.SHARED,
+      page: () => const SharedScreen(),
+      binding: SharedControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.REGISTRATION,
+      page: () => RegistrationScreen(),
+      binding: RegistrationControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.PROGRESS,
+      page: () => ProgressScreen(),
+      binding: ProgressControllerBinding(),
     ),
   ];
 }
