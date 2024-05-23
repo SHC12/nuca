@@ -9,6 +9,7 @@ const Color backgroundTextfieldColor = Color(0xFFF6F6F6);
 const Color backgroundTextfieldColor2 = Color(0xFFFFFFFF);
 
 const Color whiteColor = Color(0xFFFFFFFF);
+const Color blackColor = Color(0xFF000000);
 
 const Color greyTextColor = Color(0xFFA7A7A7);
 const Color greyTextColor2 = Color(0xFFA7A5A5);

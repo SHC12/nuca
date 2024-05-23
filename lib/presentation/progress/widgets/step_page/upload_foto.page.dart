@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
+
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
@@ -35,7 +37,7 @@ class UploadFotoPage extends StatelessWidget {
             height: 35.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              image: DecorationImage(
+              image: const DecorationImage(
                   image: AssetImage(
                     'assets/images/avatar_sample.png',
                   ),
@@ -51,8 +53,8 @@ class UploadFotoPage extends StatelessWidget {
           children: [
             DottedBorder(
               borderType: BorderType.RRect,
-              radius: Radius.circular(8),
-              dashPattern: [8, 4],
+              radius: const Radius.circular(8),
+              dashPattern: const [8, 4],
               color: primaryColor,
               child: Container(
                 decoration: BoxDecoration(color: greyColor2, borderRadius: BorderRadius.circular(8)),
@@ -71,8 +73,8 @@ class UploadFotoPage extends StatelessWidget {
             ),
             DottedBorder(
               borderType: BorderType.RRect,
-              radius: Radius.circular(8),
-              dashPattern: [8, 4],
+              radius: const Radius.circular(8),
+              dashPattern: const [8, 4],
               color: primaryColor,
               child: Container(
                 decoration: BoxDecoration(color: greyColor2, borderRadius: BorderRadius.circular(8)),
@@ -91,8 +93,8 @@ class UploadFotoPage extends StatelessWidget {
             ),
             DottedBorder(
               borderType: BorderType.RRect,
-              radius: Radius.circular(8),
-              dashPattern: [8, 4],
+              radius: const Radius.circular(8),
+              dashPattern: const [8, 4],
               color: primaryColor,
               child: Container(
                 decoration: BoxDecoration(color: greyColor2, borderRadius: BorderRadius.circular(8)),

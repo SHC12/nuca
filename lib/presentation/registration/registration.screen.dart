@@ -15,8 +15,7 @@ import 'package:sizer/sizer.dart';
 class RegistrationScreen extends GetView<RegistrationController> {
   RegistrationScreen({Key? key}) : super(key: key);
 
-  RegistrationController registrationController =
-      Get.put(RegistrationController());
+  RegistrationController registrationController = Get.put(RegistrationController());
 
   final TextEditingController tName = TextEditingController();
   final TextEditingController tEmail = TextEditingController();
@@ -131,8 +130,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                   value: registrationController.isAgree.value,
                                   activeColor: primaryColor,
                                   onChanged: (value) {
-                                    registrationController.isAgree.value =
-                                        value!;
+                                    registrationController.isAgree.value = value!;
                                   }),
                               SizedBox(
                                 width: 2.w,
@@ -170,7 +168,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Expanded(
+                        const Expanded(
                             child: Divider(
                           color: greyColor,
                         )),
@@ -179,14 +177,12 @@ class RegistrationScreen extends GetView<RegistrationController> {
                         ),
                         Text(
                           " Atau dengan ",
-                          style: defaultSubTextStyle.copyWith(
-                              color: greyTextColor2,
-                              fontWeight: FontWeight.bold),
+                          style: defaultSubTextStyle.copyWith(color: greyTextColor2, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
                           width: 2.w,
                         ),
-                        Expanded(
+                        const Expanded(
                             child: Divider(
                           color: greyColor,
                         )),
@@ -226,8 +222,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                       },
                       child: Text(
                         'Masuk',
-                        style: primarySubTextStyle.copyWith(
-                            decoration: TextDecoration.underline),
+                        style: primarySubTextStyle.copyWith(decoration: TextDecoration.underline),
                       ),
                     ),
                     SizedBox(

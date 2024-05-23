@@ -1,9 +1,8 @@
+// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
-import 'package:nuca/presentation/shared/input_textfield_widget.dart';
-import 'package:nuca/presentation/shared/widgets/button.widget.dart';
-import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
 class InterestedPage extends StatelessWidget {
@@ -32,7 +31,6 @@ class InterestedPage extends StatelessWidget {
         ),
         Container(
           width: 80.w,
-          // height: 20.h,
           decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(8),
@@ -41,20 +39,6 @@ class InterestedPage extends StatelessWidget {
               )),
           child: Column(
             children: [
-              // Padding(
-              //   padding: EdgeInsets.only(top: 1.h, left: 4.w, right: 4.w),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.start,
-              //     crossAxisAlignment: CrossAxisAlignment.center,
-              //     children: [
-              //       Text(
-              //         'Pria',
-              //         style: primarySubTextStyle,
-              //       ),
-
-              //     ],
-              //   ),
-              // ),
               RadioListTile(
                   value: 'men',
                   title: Text(
@@ -66,7 +50,7 @@ class InterestedPage extends StatelessWidget {
                   onChanged: (value) {
                     groupValueInterested = value;
                   }),
-              Divider(
+              const Divider(
                 color: primaryColor,
                 thickness: 1,
               ),
@@ -81,7 +65,7 @@ class InterestedPage extends StatelessWidget {
                   onChanged: (value) {
                     groupValueInterested = value;
                   }),
-              Divider(
+              const Divider(
                 color: primaryColor,
                 thickness: 1,
               ),

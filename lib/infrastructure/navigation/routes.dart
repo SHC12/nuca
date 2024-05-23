@@ -7,8 +7,9 @@ class Routes {
 
   static const HOME = '/home';
   static const LOGIN = '/login';
+  static const PROGRESS = '/progress';
   static const REGISTRATION = '/registration';
   static const SHARED = '/shared';
   static const SPLASH = '/splash';
-  static const PROGRESS = '/progress';
+  static const FILTER = '/filter';
 }

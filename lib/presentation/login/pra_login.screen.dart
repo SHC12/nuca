@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/home/navbar_bottom.screen.dart';
-import 'package:nuca/presentation/login/login.screen.dart';
 import 'package:nuca/presentation/shared/widgets/button.widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -56,7 +55,7 @@ class PraLoginScreen extends GetView<LoginController> {
                     title: 'Get Started',
                     onTap: () {
                       // Get.to(() => LoginScreen());
-                      Get.to(() => NavbarBottomScreen());
+                      Get.to(() => const NavbarBottomScreen());
                     },
                   ),
                 ),

@@ -1,3 +1,4 @@
+export 'package:nuca/infrastructure/navigation/bindings/controllers/filter.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/login.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/progress.controller.binding.dart'; 

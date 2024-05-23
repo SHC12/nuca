@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/shared/input_textfield_widget.dart';
-import 'package:nuca/presentation/shared/widgets/button.widget.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 

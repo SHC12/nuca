@@ -46,11 +46,13 @@ class PeopleListWidget extends StatelessWidget {
         SizedBox(
           height: 2.h,
         ),
-        PeopleItemWidget(),
-        PeopleItemWidget(),
-        PeopleItemWidget(),
-        PeopleItemWidget(),
-        PeopleItemWidget(),
+        const PeopleItemWidget(),
+        const PeopleItemWidget(),
+        const PeopleItemWidget(),
+        const PeopleItemWidget(),
+        const PeopleItemWidget(),
+        const PeopleItemWidget(),
+        const PeopleItemWidget(),
       ],
     );
   }

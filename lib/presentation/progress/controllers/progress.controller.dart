@@ -5,11 +5,9 @@ class ProgressController extends GetxController {
 
   nextPage() {
     indexStepPage.value++;
-    print(indexStepPage.value);
   }
 
   previousPage() {
     indexStepPage.value--;
-    print(indexStepPage.value);
   }
 }

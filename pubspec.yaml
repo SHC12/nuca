@@ -17,6 +17,8 @@ dependencies:
   remixicon_updated: 1.0.2
   dotted_border: 2.1.0
   persistent_bottom_nav_bar: 5.0.2
+  flutter_xlider: 3.5.0
+  chip_list: 3.0.0
   flutter_localizations:
     sdk: flutter
   flutter:

@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
@@ -48,7 +50,7 @@ class WantToMeetPage extends StatelessWidget {
                   onChanged: (value) {
                     groupValueWant = value;
                   }),
-              Divider(
+              const Divider(
                 color: primaryColor,
                 thickness: 1,
               ),
@@ -63,7 +65,7 @@ class WantToMeetPage extends StatelessWidget {
                   onChanged: (value) {
                     groupValueWant = value;
                   }),
-              Divider(
+              const Divider(
                 color: primaryColor,
                 thickness: 1,
               ),

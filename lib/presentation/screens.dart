@@ -1,3 +1,4 @@
+export 'package:nuca/presentation/filter/filter.screen.dart';
 export 'package:nuca/presentation/home/home.screen.dart';
 export 'package:nuca/presentation/login/login.screen.dart';
 export 'package:nuca/presentation/progress/progress.screen.dart';

@@ -50,7 +50,7 @@ class ButtonWidget extends StatelessWidget {
                     backgroundColor: color,
                     padding: EdgeInsets.symmetric(vertical: 2.h),
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(color: primaryColor),
+                      side: const BorderSide(color: primaryColor),
                       borderRadius: BorderRadius.circular(30),
                     ),
                   )

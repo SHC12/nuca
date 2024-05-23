@@ -16,7 +16,7 @@ class PeopleItemWidget extends StatelessWidget {
         children: [
           Stack(children: [
             CircleAvatar(
-              backgroundImage: AssetImage("assets/images/avatar_sample.png"),
+              backgroundImage: const AssetImage("assets/images/avatar_sample.png"),
               radius: 5.h,
             ),
             Positioned(

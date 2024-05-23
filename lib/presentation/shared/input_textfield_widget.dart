@@ -133,7 +133,7 @@ class _InputTextieldWidgetState extends State<InputTextieldWidget> {
                       hintStyle: defaultTextStyle.copyWith(fontSize: 12.sp, color: hintColor),
                       border: InputBorder.none,
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: primaryColor),
+                        borderSide: const BorderSide(color: primaryColor),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -211,7 +211,7 @@ class _InputTextieldWidgetState extends State<InputTextieldWidget> {
                                 hintStyle: defaultTextStyle.copyWith(fontSize: 12.sp, color: hintColor),
                                 border: InputBorder.none,
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(color: backgroundTextfieldColor),
+                                  borderSide: const BorderSide(color: backgroundTextfieldColor),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 focusedBorder: OutlineInputBorder(

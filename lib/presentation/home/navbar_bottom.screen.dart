@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/presentation/home/home.screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
 class NavbarBottomScreen extends StatefulWidget {

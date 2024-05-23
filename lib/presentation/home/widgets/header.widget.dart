@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
+import 'package:nuca/presentation/screens.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
@@ -14,9 +16,14 @@ class HeaderWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(
-              Remix.equalizer_fill,
-              size: 8.w,
+            GestureDetector(
+              onTap: () {
+                Get.to(() => FilterScreen());
+              },
+              child: Icon(
+                Remix.equalizer_fill,
+                size: 8.w,
+              ),
             ),
             Image.asset(
               'assets/images/logo_text.png',

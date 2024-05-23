@@ -58,5 +58,10 @@ class Nav {
       page: () => ProgressScreen(),
       binding: ProgressControllerBinding(),
     ),
+    GetPage(
+      name: Routes.FILTER,
+      page: () => FilterScreen(),
+      binding: FilterControllerBinding(),
+    ),
   ];
 }

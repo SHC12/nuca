@@ -132,7 +132,7 @@ class LoginScreen extends GetView<LoginController> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Expanded(
+                      const Expanded(
                           child: Divider(
                         color: greyColor,
                       )),
@@ -141,13 +141,12 @@ class LoginScreen extends GetView<LoginController> {
                       ),
                       Text(
                         " Atau dengan ",
-                        style: defaultSubTextStyle.copyWith(
-                            color: greyTextColor2, fontWeight: FontWeight.bold),
+                        style: defaultSubTextStyle.copyWith(color: greyTextColor2, fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
                         width: 2.w,
                       ),
-                      Expanded(
+                      const Expanded(
                           child: Divider(
                         color: greyColor,
                       )),
@@ -187,8 +186,7 @@ class LoginScreen extends GetView<LoginController> {
                     },
                     child: Text(
                       'Daftar Disini!',
-                      style: primarySubTextStyle.copyWith(
-                          decoration: TextDecoration.underline),
+                      style: primarySubTextStyle.copyWith(decoration: TextDecoration.underline),
                     ),
                   )
                 ],

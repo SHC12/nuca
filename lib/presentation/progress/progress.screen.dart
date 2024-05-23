@@ -1,9 +1,10 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
-import 'package:nuca/presentation/home/home.screen.dart';
 import 'package:nuca/presentation/home/navbar_bottom.screen.dart';
 import 'package:nuca/presentation/progress/widgets/step_page/dob.page.dart';
 import 'package:nuca/presentation/progress/widgets/step_page/gender.page.dart';
@@ -11,9 +12,7 @@ import 'package:nuca/presentation/progress/widgets/step_page/interested.page.dar
 import 'package:nuca/presentation/progress/widgets/step_page/name.page.dart';
 import 'package:nuca/presentation/progress/widgets/step_page/upload_foto.page.dart';
 import 'package:nuca/presentation/progress/widgets/step_page/want_to_meet.page.dart';
-import 'package:nuca/presentation/shared/input_textfield_widget.dart';
 import 'package:nuca/presentation/shared/widgets/button.widget.dart';
-import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
 import 'controllers/progress.controller.dart';
@@ -61,18 +60,18 @@ class ProgressScreen extends GetView<ProgressController> {
                     height: 4.h,
                   ),
                   controller.indexStepPage.value == 1
-                      ? NamePage()
+                      ? const NamePage()
                       : controller.indexStepPage.value == 2
-                          ? DateOfBirthPage()
+                          ? const DateOfBirthPage()
                           : controller.indexStepPage.value == 3
-                              ? GenderPage()
+                              ? const GenderPage()
                               : controller.indexStepPage.value == 4
                                   ? InterestedPage()
                                   : controller.indexStepPage.value == 5
                                       ? WantToMeetPage()
                                       : controller.indexStepPage.value == 6
                                           ? UploadFotoPage()
-                                          : SizedBox(),
+                                          : const SizedBox(),
                   Expanded(
                       child: Align(
                     alignment: Alignment.bottomCenter,
@@ -80,7 +79,7 @@ class ProgressScreen extends GetView<ProgressController> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         controller.indexStepPage.value == 1
-                            ? SizedBox()
+                            ? const SizedBox()
                             : SizedBox(
                                 height: 8.h,
                                 width: 40.w,
@@ -107,7 +106,7 @@ class ProgressScreen extends GetView<ProgressController> {
                               if (controller.indexStepPage.value < 6) {
                                 controller.nextPage();
                               } else if (controller.indexStepPage.value == 6) {
-                                Get.off(() => NavbarBottomScreen());
+                                Get.off(() => const NavbarBottomScreen());
                               }
                             },
                           ),
