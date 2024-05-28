@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
+import 'package:nuca/presentation/chat/chat_menu.screen.dart';
 import 'package:nuca/presentation/home/home.screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:sizer/sizer.dart';
@@ -26,7 +27,7 @@ class _NavbarBottomScreenState extends State<NavbarBottomScreen> {
         const HomeScreen(),
         const HomeScreen(),
         const HomeScreen(),
-        const HomeScreen(),
+        const ChatMenuScreen(),
         const HomeScreen(),
       ];
 
