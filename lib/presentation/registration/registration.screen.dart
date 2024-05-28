@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/registration/controllers/registration.controller.dart';
+import 'package:nuca/presentation/screens.dart';
 import 'package:nuca/presentation/shared/input_textfield_widget.dart';
 import 'package:nuca/presentation/shared/widgets/button.widget.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
@@ -58,13 +59,13 @@ class RegistrationScreen extends GetView<RegistrationController> {
                     ),
                     Text(
                       'Create Account',
-                      style: defaultTextStyle.copyWith(fontSize: 14.sp),
+                      style: defaultBoldTextStyle.copyWith(fontSize: 16.sp),
                     ),
                     SizedBox(
                       height: 1.h,
                     ),
                     Text(
-                      'Lorem ipsum dolor sit amet, consectetur',
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
                       textAlign: TextAlign.center,
                       style: defaultSubTextStyle.copyWith(color: greyTextColor),
                     ),
@@ -84,9 +85,6 @@ class RegistrationScreen extends GetView<RegistrationController> {
                       isSubHeader: true,
                       tController: tEmail,
                     ),
-                    SizedBox(
-                      height: 1.h,
-                    ),
                     InputTextieldWidget(
                       isObscureText: false,
                       isSuffixIcon: false,
@@ -99,9 +97,6 @@ class RegistrationScreen extends GetView<RegistrationController> {
                       hint: 'example@gmail.com',
                       isSubHeader: true,
                       tController: tEmail,
-                    ),
-                    SizedBox(
-                      height: 1.h,
                     ),
                     InputTextieldWidget(
                       isCustomColorIconPreffix: true,
@@ -140,11 +135,11 @@ class RegistrationScreen extends GetView<RegistrationController> {
                                   children: [
                                     Text(
                                       'Agree with',
-                                      style: defaultSubTextStyle,
+                                      style: secondarySubTextStyle,
                                     ),
                                     Text(
                                       ' Terms and Conditions',
-                                      style: primarySubTextStyle,
+                                      style: secondarySubPrimaryColorSubTextStyle,
                                     ),
                                   ],
                                 ),
@@ -155,11 +150,12 @@ class RegistrationScreen extends GetView<RegistrationController> {
                     SizedBox(
                       height: 2.h,
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: double.infinity,
                       child: ButtonWidget(
                         color: primaryColor,
                         title: 'Sign Up',
+                        onTap: () => Get.to(() => OtpScreen()),
                       ),
                     ),
                     SizedBox(
@@ -214,7 +210,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                     ),
                     Text(
                       'Sudah punya akun?',
-                      style: defaultSubTextStyle,
+                      style: secondarySubTextStyle,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -222,7 +218,7 @@ class RegistrationScreen extends GetView<RegistrationController> {
                       },
                       child: Text(
                         'Masuk',
-                        style: primarySubTextStyle.copyWith(decoration: TextDecoration.underline),
+                        style: secondarySubPrimaryColorSubTextStyle.copyWith(decoration: TextDecoration.underline),
                       ),
                     ),
                     SizedBox(

@@ -54,7 +54,7 @@ class LoginScreen extends GetView<LoginController> {
                   ),
                   Text(
                     'Sign In',
-                    style: defaultTextStyle.copyWith(fontSize: 14.sp),
+                    style: defaultBoldTextStyle.copyWith(fontSize: 16.sp),
                   ),
                   SizedBox(
                     height: 2.h,
@@ -107,9 +107,8 @@ class LoginScreen extends GetView<LoginController> {
                       },
                       child: Text(
                         'Forgot Password?',
-                        style: primarySubTextStyle.copyWith(
-                          decoration: TextDecoration.underline,
-                        ),
+                        style:
+                            secondarySubTextStyle.copyWith(decoration: TextDecoration.underline, color: primaryColor),
                       ),
                     ),
                   ),
@@ -178,7 +177,7 @@ class LoginScreen extends GetView<LoginController> {
                   ),
                   Text(
                     'Belum punya akun?',
-                    style: defaultSubTextStyle,
+                    style: secondarySubTextStyle,
                   ),
                   GestureDetector(
                     onTap: () {
@@ -186,7 +185,7 @@ class LoginScreen extends GetView<LoginController> {
                     },
                     child: Text(
                       'Daftar Disini!',
-                      style: primarySubTextStyle.copyWith(decoration: TextDecoration.underline),
+                      style: secondarySubPrimaryColorSubTextStyle.copyWith(decoration: TextDecoration.underline),
                     ),
                   )
                 ],

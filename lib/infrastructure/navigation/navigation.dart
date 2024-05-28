@@ -63,5 +63,35 @@ class Nav {
       page: () => FilterScreen(),
       binding: FilterControllerBinding(),
     ),
+    GetPage(
+      name: Routes.BOOST,
+      page: () => const BoostScreen(),
+      binding: BoostControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.OTP,
+      page: () => OtpScreen(),
+      binding: OtpControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.QUIZ,
+      page: () => QuizScreen(),
+      binding: QuizControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.CALL,
+      page: () => const CallScreen(),
+      binding: CallControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.MATCH,
+      page: () => MatchScreen(),
+      binding: MatchControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.CHAT,
+      page: () => const ChatScreen(),
+      binding: ChatControllerBinding(),
+    ),
   ];
 }

@@ -56,7 +56,7 @@ class ButtonWidget extends StatelessWidget {
                   )
                 : ElevatedButton.styleFrom(
                     backgroundColor: color,
-                    padding: EdgeInsets.symmetric(vertical: 2.h),
+                    padding: EdgeInsets.symmetric(vertical: 1.h),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
@@ -100,8 +100,8 @@ class ButtonWidget extends StatelessWidget {
                           )
                         : Text(
                             title!,
-                            style: whiteTextStyle.copyWith(
-                                fontSize: 12.sp,
+                            style: secondaryWhiteTextStyle.copyWith(
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.bold,
                                 color: isColorTittleCustom == true ? colorTittleCustom : null),
                           )

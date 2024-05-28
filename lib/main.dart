@@ -16,8 +16,7 @@ void main() async {
 
   Intl.defaultLocale = 'id';
   var initialRoute = await Routes.initialRoute;
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   initializeDateFormatting().then((_) {
     runApp(Main(initialRoute));
@@ -37,10 +36,10 @@ class Main extends StatelessWidget {
           Locale('id', 'ID'),
         ],
         theme: ThemeData(
-            textTheme: GoogleFonts.montserratTextTheme(
-              Theme.of(context).textTheme,
-            ),
-            fontFamily: GoogleFonts.montserrat().fontFamily),
+            // textTheme: GoogleFonts.montserratTextTheme(
+            //   Theme.of(context).textTheme,
+            // ),
+            fontFamily: 'LTSaeada'),
         localizationsDelegates: const [
           DefaultMaterialLocalizations.delegate,
           DefaultWidgetsLocalizations.delegate,

@@ -41,25 +41,30 @@ class HeaderWidget extends StatelessWidget {
           children: [
             Flexible(
                 flex: 1,
-                child: Container(
-                  height: 10.h,
-                  padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
-                  decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        'assets/images/quiz_icon.png',
-                        width: 8.w,
-                      ),
-                      SizedBox(
-                        width: 2.w,
-                      ),
-                      Text(
-                        'Quiz',
-                        style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
-                      )
-                    ],
+                child: GestureDetector(
+                  onTap: () {
+                    Get.to(() => QuizScreen());
+                  },
+                  child: Container(
+                    height: 10.h,
+                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/quiz_icon.png',
+                          width: 8.w,
+                        ),
+                        SizedBox(
+                          width: 2.w,
+                        ),
+                        Text(
+                          'Quiz',
+                          style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
+                        )
+                      ],
+                    ),
                   ),
                 )),
             SizedBox(
@@ -67,25 +72,30 @@ class HeaderWidget extends StatelessWidget {
             ),
             Flexible(
                 flex: 1,
-                child: Container(
-                  height: 10.h,
-                  padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
-                  decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        'assets/images/match_icon.png',
-                        width: 8.w,
-                      ),
-                      SizedBox(
-                        width: 2.w,
-                      ),
-                      Text(
-                        'Match',
-                        style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
-                      )
-                    ],
+                child: GestureDetector(
+                  onTap: () {
+                    Get.to(() => MatchScreen());
+                  },
+                  child: Container(
+                    height: 10.h,
+                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/match_icon.png',
+                          width: 8.w,
+                        ),
+                        SizedBox(
+                          width: 2.w,
+                        ),
+                        Text(
+                          'Match',
+                          style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
+                        )
+                      ],
+                    ),
                   ),
                 )),
           ],

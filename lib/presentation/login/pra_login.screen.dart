@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/home/navbar_bottom.screen.dart';
+import 'package:nuca/presentation/login/login.screen.dart';
+import 'package:nuca/presentation/registration/registration.screen.dart';
 import 'package:nuca/presentation/shared/widgets/button.widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -30,12 +32,13 @@ class PraLoginScreen extends GetView<LoginController> {
                 ),
                 RichText(
                     text: TextSpan(children: [
-                  TextSpan(text: 'Find More', style: defaultTextStyle.copyWith(color: secondaryColor, fontSize: 14.sp)),
-                  TextSpan(text: ' Your Love', style: defaultTextStyle.copyWith(fontSize: 14.sp)),
+                  TextSpan(text: 'Find More', style: defaultTextStyle.copyWith(color: secondaryColor, fontSize: 16.sp)),
+                  TextSpan(
+                      text: ' Your Love', style: defaultBoldTextStyle.copyWith(fontSize: 16.sp, color: blackColor)),
                 ])),
                 Text(
                   'With Happines',
-                  style: defaultTextStyle.copyWith(fontSize: 14.sp),
+                  style: defaultBoldTextStyle.copyWith(fontSize: 16.sp),
                 ),
                 SizedBox(
                   height: 2.h,
@@ -43,7 +46,7 @@ class PraLoginScreen extends GetView<LoginController> {
                 Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
                   textAlign: TextAlign.center,
-                  style: defaultSubTextStyle,
+                  style: secondarySubTextStyle,
                 ),
                 SizedBox(
                   height: 3.h,
@@ -52,10 +55,10 @@ class PraLoginScreen extends GetView<LoginController> {
                   width: double.infinity,
                   child: ButtonWidget(
                     color: primaryColor,
-                    title: 'Get Started',
+                    title: "Let's Get Started",
                     onTap: () {
-                      // Get.to(() => LoginScreen());
-                      Get.to(() => const NavbarBottomScreen());
+                      Get.to(() => LoginScreen());
+                      // Get.to(() => const NavbarBottomScreen());
                     },
                   ),
                 ),
@@ -68,14 +71,20 @@ class PraLoginScreen extends GetView<LoginController> {
                   children: [
                     Text(
                       'Belum punya akun',
-                      style: defaultSubTextStyle,
+                      style: secondarySubTextStyle,
                     ),
                     SizedBox(
                       width: 2.w,
                     ),
-                    Text(
-                      'Daftar Disini!',
-                      style: primarySubTextStyle.copyWith(decoration: TextDecoration.underline),
+                    GestureDetector(
+                      onTap: () {
+                        Get.to(() => RegistrationScreen());
+                      },
+                      child: Text(
+                        'Daftar Disini!',
+                        style:
+                            secondarySubTextStyle.copyWith(decoration: TextDecoration.underline, color: primaryColor),
+                      ),
                     )
                   ],
                 )

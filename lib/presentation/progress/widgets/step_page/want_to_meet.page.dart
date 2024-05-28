@@ -24,13 +24,13 @@ class WantToMeetPage extends StatelessWidget {
         ),
         Text(
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-          style: defaultSubTextStyle.copyWith(color: greyTextColor),
+          style: secondarySubTextStyle.copyWith(color: greyTextColor),
         ),
         SizedBox(
           height: 2.h,
         ),
         Container(
-          width: 80.w,
+          width: double.infinity,
           decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(8),
@@ -87,7 +87,7 @@ class WantToMeetPage extends StatelessWidget {
           height: 2.h,
         ),
         Container(
-          width: 80.w,
+          width: double.infinity,
           decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(8),

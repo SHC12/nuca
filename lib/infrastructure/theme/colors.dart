@@ -37,3 +37,6 @@ const Color chipBackgroundColor = Color(0xFFADB6E2);
 const Color chipBackgroundGenderColor = Color(0xFFA7C8F9);
 const Color chipBackgroundLVTopColor = Color(0xFF817EFF);
 const Color chipBackgroundVIPColor = Color(0xFFB8F900);
+
+const Color redColor = Color(0xFFFF6262);
+const Color greenColor = Color(0xFF65DF51);

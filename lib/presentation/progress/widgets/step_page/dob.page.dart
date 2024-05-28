@@ -21,7 +21,7 @@ class DateOfBirthPage extends StatelessWidget {
         ),
         Text(
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
-          style: defaultSubTextStyle.copyWith(color: greyTextColor),
+          style: secondarySubTextStyle.copyWith(color: greyTextColor),
         ),
         Row(
           children: [

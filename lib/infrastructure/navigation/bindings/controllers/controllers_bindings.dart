@@ -1,7 +1,13 @@
+export 'package:nuca/infrastructure/navigation/bindings/controllers/boost.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/call.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/chat.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/filter.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/login.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/match.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/otp.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/progress.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/quiz.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/registration.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/shared.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/splash.controller.binding.dart'; 
