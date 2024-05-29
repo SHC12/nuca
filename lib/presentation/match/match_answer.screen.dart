@@ -1,9 +1,10 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/match/match_matching.screen.dart';
-import 'package:nuca/presentation/quiz/quiz_matching.screen.dart';
 import 'package:nuca/presentation/shared/widgets/button.widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -93,7 +94,7 @@ class _MatchAnswerScreenState extends State<MatchAnswerScreen> {
                   color: primaryColor,
                   title: 'Submit',
                   onTap: () {
-                    Get.to(() => MatchMatchingScreen());
+                    Get.to(() => const MatchMatchingScreen());
                   },
                 ),
               )

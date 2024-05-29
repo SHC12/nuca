@@ -24,7 +24,11 @@ class CallScreen extends GetView<CallController> {
               flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [SizedBox(), Image.asset('assets/images/logo_text_white.png', scale: 02), SizedBox()],
+                children: [
+                  const SizedBox(),
+                  Image.asset('assets/images/logo_text_white.png', scale: 02),
+                  const SizedBox()
+                ],
               ),
             ),
             Flexible(
@@ -48,7 +52,7 @@ class CallScreen extends GetView<CallController> {
                             child: Align(
                               alignment: Alignment.centerRight,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage(
+                                backgroundImage: const AssetImage(
                                   'assets/images/avatar_sample.png',
                                 ),
                                 radius: 11.h,
@@ -59,7 +63,7 @@ class CallScreen extends GetView<CallController> {
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage(
+                                backgroundImage: const AssetImage(
                                   'assets/images/avatar_sample_2.png',
                                 ),
                                 radius: 11.h,
@@ -115,7 +119,7 @@ class CallScreen extends GetView<CallController> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.offAll(() => NavbarBottomScreen());
+                      Get.offAll(() => const NavbarBottomScreen());
                     },
                     child: CircleAvatar(
                       radius: 4.h,

@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_xlider/flutter_xlider.dart';
 import 'package:get/get.dart';
@@ -31,7 +33,7 @@ class AgePreferredWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(16),
-              boxShadow: [BoxShadow(color: greyColor.withOpacity(0.7), blurRadius: 2, offset: Offset(0, 2))],
+              boxShadow: [BoxShadow(color: greyColor.withOpacity(0.7), blurRadius: 2, offset: const Offset(0, 2))],
               border: Border.all(
                 color: greyColor2,
               )),
@@ -50,10 +52,10 @@ class AgePreferredWidget extends StatelessWidget {
                   ),
                   Expanded(
                     child: FlutterSlider(
-                      values: [26],
+                      values: const [26],
                       max: 40,
                       min: 18,
-                      handler: FlutterSliderHandler(child: Icon(Remix.checkbox_blank_circle_fill)),
+                      handler: FlutterSliderHandler(child: const Icon(Remix.checkbox_blank_circle_fill)),
                       onDragging: (handlerIndex, lowerValue, upperValue) {
                         // filterController.ageValue.value = lowerValue;
                         // _lowerValue = lowerValue;

@@ -18,7 +18,7 @@ class HeaderWidget extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                Get.to(() => FilterScreen());
+                Get.to(() => const FilterScreen());
               },
               child: Icon(
                 Remix.equalizer_fill,

@@ -1,26 +1,11 @@
-import 'dart:convert';
-import 'dart:io';
-
-// import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
-// import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
-// import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 
 import 'package:get/get.dart';
-// import 'package:image_picker/image_picker.dart';
-// import 'package:mime/mime.dart';
-import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/chat/widgets/chat_bar.widget.dart';
 import 'package:nuca/presentation/chat/widgets/chats.widget.dart';
 import 'package:nuca/presentation/filter/filter.screen.dart';
-import 'package:nuca/presentation/home/widgets/header.widget.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
-// import 'package:uuid/uuid.dart';
-
-import 'controllers/chat.controller.dart';
 
 class ChatMenuScreen extends StatefulWidget {
   const ChatMenuScreen({super.key});
@@ -43,7 +28,7 @@ class _ChatMenuScreenState extends State<ChatMenuScreen> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Get.to(() => FilterScreen());
+                    Get.to(() => const FilterScreen());
                   },
                   child: Icon(
                     Remix.equalizer_fill,
@@ -62,11 +47,11 @@ class _ChatMenuScreenState extends State<ChatMenuScreen> {
             SizedBox(
               height: 2.h,
             ),
-            ChatBarWidget(),
+            const ChatBarWidget(),
             SizedBox(
               height: 2.h,
             ),
-            ChatsWidget()
+            const ChatsWidget()
           ],
         ),
       ),

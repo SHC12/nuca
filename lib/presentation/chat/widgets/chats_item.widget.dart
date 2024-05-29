@@ -17,7 +17,7 @@ class ChatsItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.to(() => ChatScreen());
+        Get.to(() => const ChatScreen());
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 2.h),
@@ -45,37 +45,35 @@ class ChatsItemWidget extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
+                SizedBox(
                   width: 70.w,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Row(
-                          children: [
-                            Text(
-                              name!,
-                              style: defaultBoldTextStyle,
+                      Row(
+                        children: [
+                          Text(
+                            name!,
+                            style: defaultBoldTextStyle,
+                          ),
+                          SizedBox(
+                            width: 2.w,
+                          ),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 2.w, vertical: 0.5.h),
+                            decoration: BoxDecoration(
+                              color: chipBackgroundGenderColor,
+                              borderRadius: BorderRadius.circular(18),
                             ),
-                            SizedBox(
-                              width: 2.w,
-                            ),
-                            Container(
-                              padding: EdgeInsets.symmetric(horizontal: 2.w, vertical: 0.5.h),
-                              decoration: BoxDecoration(
-                                color: chipBackgroundGenderColor,
-                                borderRadius: BorderRadius.circular(18),
+                            child: Row(children: [
+                              Icon(
+                                Remix.women_line,
+                                color: whiteColor,
+                                size: 12.sp,
                               ),
-                              child: Row(children: [
-                                Icon(
-                                  Remix.women_line,
-                                  color: whiteColor,
-                                  size: 12.sp,
-                                ),
-                              ]),
-                            ),
-                          ],
-                        ),
+                            ]),
+                          ),
+                        ],
                       ),
                       Text(
                         time!,

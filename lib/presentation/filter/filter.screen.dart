@@ -2,16 +2,12 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
-import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/filter/widgets/age_preferred.widget.dart';
 import 'package:nuca/presentation/filter/widgets/date_with.widget.dart';
 import 'package:nuca/presentation/filter/widgets/favorite_category.widget.dart';
 import 'package:nuca/presentation/filter/widgets/location.widget.dart';
 import 'package:sizer/sizer.dart';
-
-import 'controllers/filter.controller.dart';
 
 class FilterScreen extends StatefulWidget {
   const FilterScreen({super.key});

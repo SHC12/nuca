@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
-import 'package:nuca/presentation/quiz/controllers/quiz.controller.dart';
 import 'package:nuca/presentation/screens.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
@@ -17,7 +16,6 @@ class IncomingCallScreen extends StatefulWidget {
 class _IncomingCallScreenState extends State<IncomingCallScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
@@ -34,7 +32,11 @@ class _IncomingCallScreenState extends State<IncomingCallScreen> {
               flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [SizedBox(), Image.asset('assets/images/logo_text_white.png', scale: 02), SizedBox()],
+                children: [
+                  const SizedBox(),
+                  Image.asset('assets/images/logo_text_white.png', scale: 02),
+                  const SizedBox()
+                ],
               ),
             ),
             Flexible(
@@ -58,7 +60,7 @@ class _IncomingCallScreenState extends State<IncomingCallScreen> {
                             child: Align(
                               alignment: Alignment.centerRight,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage(
+                                backgroundImage: const AssetImage(
                                   'assets/images/avatar_sample.png',
                                 ),
                                 radius: 11.h,
@@ -69,7 +71,7 @@ class _IncomingCallScreenState extends State<IncomingCallScreen> {
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage(
+                                backgroundImage: const AssetImage(
                                   'assets/images/avatar_sample_2.png',
                                 ),
                                 radius: 11.h,
@@ -93,7 +95,7 @@ class _IncomingCallScreenState extends State<IncomingCallScreen> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => CallScreen());
+                      Get.to(() => const CallScreen());
                     },
                     child: CircleAvatar(
                       radius: 4.h,

@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages, sort_child_properties_last
+
 import 'dart:convert';
 import 'dart:io';
 
@@ -19,8 +21,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 import 'package:uuid/uuid.dart';
-
-import 'controllers/chat.controller.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -228,50 +228,48 @@ class _ChatScreenState extends State<ChatScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            Get.back();
-                          },
-                          child: Icon(
-                            Remix.arrow_left_s_line,
-                            size: 5.h,
-                          ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Get.back();
+                        },
+                        child: Icon(
+                          Remix.arrow_left_s_line,
+                          size: 5.h,
                         ),
-                        SizedBox(
-                          width: 2.w,
+                      ),
+                      SizedBox(
+                        width: 2.w,
+                      ),
+                      Stack(children: [
+                        CircleAvatar(
+                          backgroundImage: const AssetImage("assets/images/avatar_sample_2.png"),
+                          radius: 3.h,
                         ),
-                        Stack(children: [
-                          CircleAvatar(
-                            backgroundImage: const AssetImage("assets/images/avatar_sample_2.png"),
-                            radius: 3.h,
-                          ),
-                          Positioned(
-                              right: 0,
-                              bottom: 0,
-                              child: Container(
-                                  padding: EdgeInsets.all(1.w),
-                                  decoration: BoxDecoration(
-                                      border: Border.all(width: 2, color: Colors.white),
-                                      borderRadius: BorderRadius.circular(90.0),
-                                      color: Colors.green)))
-                        ]),
-                        SizedBox(
-                          width: 4.w,
-                        ),
-                        Text('Dewi Rahmawati', style: defaultTextStyle)
-                      ],
-                    ),
+                        Positioned(
+                            right: 0,
+                            bottom: 0,
+                            child: Container(
+                                padding: EdgeInsets.all(1.w),
+                                decoration: BoxDecoration(
+                                    border: Border.all(width: 2, color: Colors.white),
+                                    borderRadius: BorderRadius.circular(90.0),
+                                    color: Colors.green)))
+                      ]),
+                      SizedBox(
+                        width: 4.w,
+                      ),
+                      Text('Dewi Rahmawati', style: defaultTextStyle)
+                    ],
                   ),
-                  Icon(Remix.more_2_fill)
+                  const Icon(Remix.more_2_fill)
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               thickness: 1,
             ),
             Expanded(
@@ -290,7 +288,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             : BubbleNip.rightBottom,
                   );
                 },
-                inputOptions: InputOptions(sendButtonVisibilityMode: SendButtonVisibilityMode.always),
+                inputOptions: const InputOptions(sendButtonVisibilityMode: SendButtonVisibilityMode.always),
                 messages: _messages,
                 onAttachmentPressed: _handleAttachmentPressed,
                 onMessageTap: _handleMessageTap,

@@ -16,7 +16,6 @@ class OnCallScreen extends StatefulWidget {
 class _OnCallScreenState extends State<OnCallScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
@@ -33,7 +32,11 @@ class _OnCallScreenState extends State<OnCallScreen> {
               flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [SizedBox(), Image.asset('assets/images/logo_text_white.png', scale: 02), SizedBox()],
+                children: [
+                  const SizedBox(),
+                  Image.asset('assets/images/logo_text_white.png', scale: 02),
+                  const SizedBox()
+                ],
               ),
             ),
             Flexible(
@@ -53,7 +56,7 @@ class _OnCallScreenState extends State<OnCallScreen> {
                     ),
                     CircleAvatar(
                       radius: 11.h,
-                      backgroundImage: AssetImage('assets/images/avatar_sample.png'),
+                      backgroundImage: const AssetImage('assets/images/avatar_sample.png'),
                     ),
                     SizedBox(
                       height: 4.h,
@@ -96,7 +99,7 @@ class _OnCallScreenState extends State<OnCallScreen> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Get.to(() => IncomingCallScreen());
+                          Get.to(() => const IncomingCallScreen());
                         },
                         child: CircleAvatar(
                           radius: 4.h,

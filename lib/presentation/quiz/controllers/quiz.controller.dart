@@ -14,14 +14,14 @@ class QuizController extends GetxController {
   quizAnswerStart() async {
     var duration = const Duration(seconds: 2);
     return Timer(duration, () {
-      Get.offAll(() => QuizAnswerScreen());
+      Get.offAll(() => const QuizAnswerScreen());
     });
   }
 
   quizMatching() async {
     var duration = const Duration(seconds: 2);
     return Timer(duration, () {
-      Get.offAll(() => OnCallScreen());
+      Get.offAll(() => const OnCallScreen());
     });
   }
 }

@@ -17,7 +17,6 @@ class _QuizMatchingScreenState extends State<QuizMatchingScreen> {
   QuizController quizController = Get.put(QuizController());
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     quizController.quizMatching();
   }
@@ -35,7 +34,11 @@ class _QuizMatchingScreenState extends State<QuizMatchingScreen> {
               flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [SizedBox(), Image.asset('assets/images/logo_text_white.png', scale: 02), SizedBox()],
+                children: [
+                  const SizedBox(),
+                  Image.asset('assets/images/logo_text_white.png', scale: 02),
+                  const SizedBox()
+                ],
               ),
             ),
             Flexible(
@@ -50,20 +53,20 @@ class _QuizMatchingScreenState extends State<QuizMatchingScreen> {
                         Container(
                           height: 36.h,
                           width: double.infinity,
-                          decoration: BoxDecoration(shape: BoxShape.circle, color: Color(0xFF161616)),
+                          decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF161616)),
                         ),
                         Container(
                           height: 30.h,
                           width: double.infinity,
-                          decoration: BoxDecoration(shape: BoxShape.circle, color: Color(0xFF2a2a2a)),
+                          decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF2a2a2a)),
                         ),
                         Container(
                           height: 20.h,
                           width: double.infinity,
-                          decoration: BoxDecoration(shape: BoxShape.circle, color: Color(0xFF3d3d3d)),
+                          decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF3d3d3d)),
                         ),
                         CircleAvatar(
-                          backgroundImage: AssetImage(
+                          backgroundImage: const AssetImage(
                             'assets/images/avatar_sample.png',
                           ),
                           radius: 6.h,

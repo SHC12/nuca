@@ -4,7 +4,6 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
-import 'package:nuca/presentation/home/navbar_bottom.screen.dart';
 import 'package:nuca/presentation/login/login.screen.dart';
 import 'package:nuca/presentation/registration/registration.screen.dart';
 import 'package:nuca/presentation/shared/widgets/button.widget.dart';

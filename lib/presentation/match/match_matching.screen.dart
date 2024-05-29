@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/match/controllers/match.controller.dart';
-import 'package:nuca/presentation/quiz/controllers/quiz.controller.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
@@ -18,7 +17,6 @@ class _MatchMatchingScreenState extends State<MatchMatchingScreen> {
   MatchController matchController = Get.put(MatchController());
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     matchController.matchMatching();
   }
@@ -36,7 +34,11 @@ class _MatchMatchingScreenState extends State<MatchMatchingScreen> {
               flex: 1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [SizedBox(), Image.asset('assets/images/logo_text_white.png', scale: 02), SizedBox()],
+                children: [
+                  const SizedBox(),
+                  Image.asset('assets/images/logo_text_white.png', scale: 02),
+                  const SizedBox()
+                ],
               ),
             ),
             Flexible(
@@ -51,20 +53,20 @@ class _MatchMatchingScreenState extends State<MatchMatchingScreen> {
                         Container(
                           height: 36.h,
                           width: double.infinity,
-                          decoration: BoxDecoration(shape: BoxShape.circle, color: Color(0xFF161616)),
+                          decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF161616)),
                         ),
                         Container(
                           height: 30.h,
                           width: double.infinity,
-                          decoration: BoxDecoration(shape: BoxShape.circle, color: Color(0xFF2a2a2a)),
+                          decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF2a2a2a)),
                         ),
                         Container(
                           height: 20.h,
                           width: double.infinity,
-                          decoration: BoxDecoration(shape: BoxShape.circle, color: Color(0xFF3d3d3d)),
+                          decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF3d3d3d)),
                         ),
                         CircleAvatar(
-                          backgroundImage: AssetImage(
+                          backgroundImage: const AssetImage(
                             'assets/images/avatar_sample.png',
                           ),
                           radius: 6.h,

@@ -60,7 +60,7 @@ class Nav {
     ),
     GetPage(
       name: Routes.FILTER,
-      page: () => FilterScreen(),
+      page: () => const FilterScreen(),
       binding: FilterControllerBinding(),
     ),
     GetPage(

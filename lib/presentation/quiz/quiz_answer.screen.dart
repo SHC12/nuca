@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
@@ -96,7 +98,7 @@ class _QuizAnswerScreenState extends State<QuizAnswerScreen> {
                   color: primaryColor,
                   title: 'Submit',
                   onTap: () {
-                    Get.to(() => QuizMatchingScreen());
+                    Get.to(() => const QuizMatchingScreen());
                   },
                 ),
               )

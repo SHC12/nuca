@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:sizer/sizer.dart';
 
 class ChatBarWidget extends StatelessWidget {
@@ -18,7 +17,7 @@ class ChatBarWidget extends StatelessWidget {
               width: 12.h,
               margin: EdgeInsets.symmetric(horizontal: 1.w),
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/images/avatar_sample_2.png')),
+                image: const DecorationImage(image: AssetImage('assets/images/avatar_sample_2.png')),
                 borderRadius: BorderRadius.circular(18),
               )),
           Container(
@@ -26,7 +25,7 @@ class ChatBarWidget extends StatelessWidget {
               width: 12.h,
               margin: EdgeInsets.symmetric(horizontal: 1.w),
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/images/avatar_sample_6.png')),
+                image: const DecorationImage(image: AssetImage('assets/images/avatar_sample_6.png')),
                 borderRadius: BorderRadius.circular(18),
               )),
           Container(
@@ -34,7 +33,7 @@ class ChatBarWidget extends StatelessWidget {
               width: 12.h,
               margin: EdgeInsets.symmetric(horizontal: 1.w),
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/images/avatar_sample_4.png')),
+                image: const DecorationImage(image: AssetImage('assets/images/avatar_sample_4.png')),
                 borderRadius: BorderRadius.circular(18),
               )),
           Container(
@@ -42,7 +41,7 @@ class ChatBarWidget extends StatelessWidget {
               width: 12.h,
               margin: EdgeInsets.symmetric(horizontal: 1.w),
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/images/avatar_sample_5.png')),
+                image: const DecorationImage(image: AssetImage('assets/images/avatar_sample_5.png')),
                 borderRadius: BorderRadius.circular(18),
               )),
         ],
