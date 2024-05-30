@@ -18,6 +18,7 @@ class ButtonWidget extends StatelessWidget {
   final Color? colorTittleCustom;
   final bool? isBold;
   final bool? isBorderColorOnly;
+  final Color? colorBorder;
   const ButtonWidget(
       {Key? key,
       this.title,
@@ -32,7 +33,8 @@ class ButtonWidget extends StatelessWidget {
       this.isColorTittleCustom,
       this.colorTittleCustom,
       this.isBold,
-      this.isBorderColorOnly})
+      this.isBorderColorOnly,
+      this.colorBorder})
       : super(key: key);
 
   @override
@@ -50,7 +52,10 @@ class ButtonWidget extends StatelessWidget {
                     backgroundColor: color,
                     padding: EdgeInsets.symmetric(vertical: 2.h),
                     shape: RoundedRectangleBorder(
-                      side: const BorderSide(color: primaryColor),
+                      side: BorderSide(
+                          color: colorBorder == null
+                              ? primaryColor
+                              : colorBorder!),
                       borderRadius: BorderRadius.circular(30),
                     ),
                   )
@@ -75,7 +80,9 @@ class ButtonWidget extends StatelessWidget {
                             style: whiteTextStyle.copyWith(
                                 fontSize: 7.sp,
                                 fontWeight: FontWeight.bold,
-                                color: isColorTittleCustom == true ? colorTittleCustom : null),
+                                color: isColorTittleCustom == true
+                                    ? colorTittleCustom
+                                    : null),
                           ),
                         ],
                       )
@@ -88,7 +95,9 @@ class ButtonWidget extends StatelessWidget {
                                 style: whiteTextStyle.copyWith(
                                     fontSize: 7.sp,
                                     fontWeight: FontWeight.bold,
-                                    color: isColorTittleCustom == true ? colorTittleCustom : null),
+                                    color: isColorTittleCustom == true
+                                        ? colorTittleCustom
+                                        : null),
                               ),
                               SizedBox(
                                 width: 2.w,
@@ -103,7 +112,9 @@ class ButtonWidget extends StatelessWidget {
                             style: secondaryWhiteTextStyle.copyWith(
                                 fontSize: 13.sp,
                                 fontWeight: FontWeight.bold,
-                                color: isColorTittleCustom == true ? colorTittleCustom : null),
+                                color: isColorTittleCustom == true
+                                    ? colorTittleCustom
+                                    : null),
                           )
                 : Icon(
                     icon,

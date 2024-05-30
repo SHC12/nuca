@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
+import 'package:nuca/presentation/boost/controllers/boost.controller.dart';
 import 'package:nuca/presentation/screens.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
 class HeaderWidget extends StatelessWidget {
-  const HeaderWidget({super.key});
+  HeaderWidget({super.key});
+
+  BoostController boostController = Get.put(BoostController());
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +31,14 @@ class HeaderWidget extends StatelessWidget {
             Image.asset(
               'assets/images/logo_text.png',
             ),
-            Image.asset(
-              'assets/images/rocket_icon.png',
-              width: 8.w,
+            GestureDetector(
+              onTap: () {
+                boostController.popUpBoost('asdaw', () => null);
+              },
+              child: Image.asset(
+                'assets/images/rocket_icon.png',
+                width: 8.w,
+              ),
             ),
           ],
         ),
@@ -47,8 +55,11 @@ class HeaderWidget extends StatelessWidget {
                   },
                   child: Container(
                     height: 10.h,
-                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
-                    decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    decoration: BoxDecoration(
+                        color: primaryColor,
+                        borderRadius: BorderRadius.circular(18)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -61,7 +72,8 @@ class HeaderWidget extends StatelessWidget {
                         ),
                         Text(
                           'Quiz',
-                          style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
+                          style: defaultBoldTextStyle.copyWith(
+                              color: greyTextColor3, fontSize: 14.sp),
                         )
                       ],
                     ),
@@ -78,8 +90,11 @@ class HeaderWidget extends StatelessWidget {
                   },
                   child: Container(
                     height: 10.h,
-                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
-                    decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    decoration: BoxDecoration(
+                        color: primaryColor,
+                        borderRadius: BorderRadius.circular(18)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -92,7 +107,8 @@ class HeaderWidget extends StatelessWidget {
                         ),
                         Text(
                           'Match',
-                          style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
+                          style: defaultBoldTextStyle.copyWith(
+                              color: greyTextColor3, fontSize: 14.sp),
                         )
                       ],
                     ),

@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         body: Padding(
       padding: EdgeInsets.symmetric(vertical: 4.h, horizontal: 4.w),
-      child: const SingleChildScrollView(
+      child: SingleChildScrollView(
         child: Column(
           children: [HeaderWidget(), PeopleListWidget()],
         ),
