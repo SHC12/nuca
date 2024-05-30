@@ -48,13 +48,26 @@ class PeopleListWidget extends StatelessWidget {
           SizedBox(
             height: 2.h,
           ),
-          const PeopleItemWidget(),
-          const PeopleItemWidget(),
-          const PeopleItemWidget(),
-          const PeopleItemWidget(),
-          const PeopleItemWidget(),
-          const PeopleItemWidget(),
-          const PeopleItemWidget(),
+          PeopleItemWidget(
+            avatar: 'assets/images/avatar_sample_2.png',
+            name: 'Dewi Rahmawati',
+            status: 'Single, career, and still belive allah',
+          ),
+          PeopleItemWidget(
+            avatar: 'assets/images/avatar_sample_4.png',
+            name: 'Dewi Rahmawati',
+            status: 'sang pejuang cinta yang ga cinta cinta amat',
+          ),
+          PeopleItemWidget(
+            avatar: 'assets/images/avatar_sample_5.png',
+            name: 'Dewi Rahmawati',
+            status: 'Hidup bawa heppy aja, enjoy your life',
+          ),
+          PeopleItemWidget(
+            avatar: 'assets/images/avatar_sample_6.png',
+            name: 'Dewi Rahmawati',
+            status: 'penyayang, halus, lembut, senang bergaul',
+          ),
         ],
       ),
     );

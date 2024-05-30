@@ -19,9 +19,7 @@ class BoostScreen extends GetView<BoostController> {
       width: double.infinity,
       height: 100.h,
       decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/images/boost_background.png'),
-              fit: BoxFit.cover)),
+          image: DecorationImage(image: AssetImage('assets/images/boost_background.png'), fit: BoxFit.cover)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -33,10 +31,13 @@ class BoostScreen extends GetView<BoostController> {
                 SizedBox(),
                 Text(
                   'BOOST STOCK',
-                  style: whiteTextStyle.copyWith(
-                      fontWeight: FontWeight.bold, fontSize: 16.sp),
+                  style: whiteTextStyle.copyWith(fontWeight: FontWeight.bold, fontSize: 16.sp),
                 ),
-                Icon(Remix.close_line, color: whiteColor)
+                GestureDetector(
+                    onTap: () {
+                      Get.back();
+                    },
+                    child: Icon(Remix.close_line, color: whiteColor))
               ],
             ),
           ),
@@ -51,25 +52,20 @@ class BoostScreen extends GetView<BoostController> {
                   Container(
                     width: 60.w,
                     margin: EdgeInsets.only(right: 4.w),
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(28),
-                        gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFFFFFFFF).withOpacity(0.31),
-                              Color(0xFFFFFFFF).withOpacity(0.69),
-                              Color(0xFF999999).withOpacity(0.58),
-                            ])),
+                        gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
+                          Color(0xFFFFFFFF).withOpacity(0.31),
+                          Color(0xFFFFFFFF).withOpacity(0.69),
+                          Color(0xFF999999).withOpacity(0.58),
+                        ])),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'SILVER',
-                          style: whiteTextStyle.copyWith(
-                              fontSize: 16.sp, fontWeight: FontWeight.w300),
+                          style: whiteTextStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w300),
                         ),
                         SizedBox(
                           height: 1.h,
@@ -83,8 +79,7 @@ class BoostScreen extends GetView<BoostController> {
                         ),
                         Text(
                           'INCLUDE\nLorem ipsum dolor sit amet, consectetur adipiscing elit, ',
-                          style: whiteTextStyle.copyWith(
-                              fontWeight: FontWeight.w200, fontSize: 8.sp),
+                          style: whiteTextStyle.copyWith(fontWeight: FontWeight.w200, fontSize: 8.sp),
                         ),
                       ],
                     ),
@@ -92,25 +87,20 @@ class BoostScreen extends GetView<BoostController> {
                   Container(
                     margin: EdgeInsets.only(right: 4.w),
                     width: 60.w,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(28),
-                        gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [
-                              Color(0xFFFFFFFF).withOpacity(0.31),
-                              Color(0xFFFFFFFF).withOpacity(0.69),
-                              Color(0xFF999999).withOpacity(0.58),
-                            ])),
+                        gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
+                          Color(0xFFFFFFFF).withOpacity(0.31),
+                          Color(0xFFFFFFFF).withOpacity(0.69),
+                          Color(0xFF999999).withOpacity(0.58),
+                        ])),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'GOLD',
-                          style: whiteTextStyle.copyWith(
-                              fontSize: 16.sp, fontWeight: FontWeight.w300),
+                          style: whiteTextStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w300),
                         ),
                         SizedBox(
                           height: 1.h,
@@ -124,8 +114,7 @@ class BoostScreen extends GetView<BoostController> {
                         ),
                         Text(
                           'INCLUDE\nLorem ipsum dolor sit amet, consectetur adipiscing elit, ',
-                          style: whiteTextStyle.copyWith(
-                              fontWeight: FontWeight.w200, fontSize: 8.sp),
+                          style: whiteTextStyle.copyWith(fontWeight: FontWeight.w200, fontSize: 8.sp),
                         ),
                       ],
                     ),

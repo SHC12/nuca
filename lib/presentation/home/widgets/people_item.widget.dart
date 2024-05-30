@@ -5,19 +5,22 @@ import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
 class PeopleItemWidget extends StatelessWidget {
-  const PeopleItemWidget({super.key});
+  final String? avatar;
+  final String? name;
+  final String? status;
+  PeopleItemWidget({super.key, this.avatar, this.name, this.status});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 2.h),
+      margin: EdgeInsets.only(bottom: 3.h),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(children: [
             CircleAvatar(
-              backgroundImage: const AssetImage("assets/images/avatar_sample.png"),
-              radius: 5.h,
+              backgroundImage: AssetImage(avatar!),
+              radius: 4.h,
             ),
             Positioned(
                 right: 0,
@@ -36,7 +39,7 @@ class PeopleItemWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Dewi Rahmawati',
+                name!,
                 style: defaultBoldTextStyle,
               ),
               SizedBox(
@@ -54,14 +57,14 @@ class PeopleItemWidget extends StatelessWidget {
                       Icon(
                         Remix.women_line,
                         color: whiteColor,
-                        size: 12.sp,
+                        size: 10.sp,
                       ),
                       SizedBox(
                         width: 1.w,
                       ),
                       Text(
                         '27',
-                        style: whiteTextStyle.copyWith(fontWeight: FontWeight.bold),
+                        style: whiteSubTextStyle.copyWith(),
                       )
                     ]),
                   ),
@@ -77,7 +80,7 @@ class PeopleItemWidget extends StatelessWidget {
                     child: Row(children: [
                       Text(
                         'LV.10',
-                        style: whiteTextStyle.copyWith(fontWeight: FontWeight.bold),
+                        style: whiteSubTextStyle.copyWith(),
                       )
                     ]),
                   ),
@@ -93,7 +96,7 @@ class PeopleItemWidget extends StatelessWidget {
                     child: Row(children: [
                       Text(
                         'TOP 12',
-                        style: whiteTextStyle.copyWith(fontWeight: FontWeight.bold),
+                        style: whiteSubTextStyle.copyWith(),
                       )
                     ]),
                   ),
@@ -109,7 +112,7 @@ class PeopleItemWidget extends StatelessWidget {
                     child: Row(children: [
                       Text(
                         'VIP',
-                        style: whiteTextStyle.copyWith(fontWeight: FontWeight.bold),
+                        style: whiteSubTextStyle.copyWith(),
                       )
                     ]),
                   ),
@@ -119,8 +122,8 @@ class PeopleItemWidget extends StatelessWidget {
                 height: 0.5.h,
               ),
               Text(
-                'Single, career, and still belive allah',
-                style: defaultSubTextStyle.copyWith(color: greyTextColor, fontWeight: FontWeight.bold),
+                status!,
+                style: defaultSubTextStyle.copyWith(color: greyTextColor, fontWeight: FontWeight.w100),
               )
             ],
           )

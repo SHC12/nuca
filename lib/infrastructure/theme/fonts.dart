@@ -21,4 +21,5 @@ TextStyle primaryBoldTextStyle =
     TextStyle(fontFamily: 'LTSaeada', fontSize: 12.sp, fontWeight: FontWeight.bold, color: primaryColor);
 
 TextStyle whiteTextStyle = TextStyle(fontFamily: 'LTSaeada', fontSize: 12.sp, color: whiteColor);
+TextStyle whiteSubTextStyle = TextStyle(fontFamily: 'LTSaeada', fontSize: 10.sp, color: whiteColor);
 // 
