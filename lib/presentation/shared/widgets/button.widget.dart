@@ -50,12 +50,9 @@ class ButtonWidget extends StatelessWidget {
             style: isBorderColorOnly == true
                 ? ElevatedButton.styleFrom(
                     backgroundColor: color,
-                    padding: EdgeInsets.symmetric(vertical: 2.h),
+                    padding: EdgeInsets.symmetric(vertical: 1.h),
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                          color: colorBorder == null
-                              ? primaryColor
-                              : colorBorder!),
+                      side: BorderSide(color: colorBorder == null ? primaryColor : colorBorder!),
                       borderRadius: BorderRadius.circular(30),
                     ),
                   )
@@ -80,9 +77,7 @@ class ButtonWidget extends StatelessWidget {
                             style: whiteTextStyle.copyWith(
                                 fontSize: 7.sp,
                                 fontWeight: FontWeight.bold,
-                                color: isColorTittleCustom == true
-                                    ? colorTittleCustom
-                                    : null),
+                                color: isColorTittleCustom == true ? colorTittleCustom : null),
                           ),
                         ],
                       )
@@ -95,9 +90,7 @@ class ButtonWidget extends StatelessWidget {
                                 style: whiteTextStyle.copyWith(
                                     fontSize: 7.sp,
                                     fontWeight: FontWeight.bold,
-                                    color: isColorTittleCustom == true
-                                        ? colorTittleCustom
-                                        : null),
+                                    color: isColorTittleCustom == true ? colorTittleCustom : null),
                               ),
                               SizedBox(
                                 width: 2.w,
@@ -112,9 +105,7 @@ class ButtonWidget extends StatelessWidget {
                             style: secondaryWhiteTextStyle.copyWith(
                                 fontSize: 13.sp,
                                 fontWeight: FontWeight.bold,
-                                color: isColorTittleCustom == true
-                                    ? colorTittleCustom
-                                    : null),
+                                color: isColorTittleCustom == true ? colorTittleCustom : null),
                           )
                 : Icon(
                     icon,

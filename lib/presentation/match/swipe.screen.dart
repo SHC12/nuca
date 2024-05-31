@@ -174,12 +174,6 @@ class _SwipeScreenState extends State<SwipeScreen> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        // Get.showOverlay(asyncFunction: () async {
-                        //   await Future.delayed(Duration(seconds: 1));
-                        //   // Get.back();
-                        //   // Get.to(() => HomeScreen());
-                        // });
-
                         matchController.matchSwipe();
                       },
                       child: CircleAvatar(
@@ -198,7 +192,9 @@ class _SwipeScreenState extends State<SwipeScreen> {
                         icon: Icon(Remix.heart_3_fill),
                         color: Color(0xFFFF3495),
                         iconSize: 25.sp,
-                        onPressed: () {},
+                        onPressed: () {
+                          matchController.matchSuper();
+                        },
                       ),
                     ),
                     CircleAvatar(
