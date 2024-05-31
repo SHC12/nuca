@@ -7,6 +7,7 @@ import 'package:nuca/presentation/chat/chat_menu.screen.dart';
 import 'package:nuca/presentation/home/home.screen.dart';
 import 'package:nuca/presentation/match/match.screen.dart';
 import 'package:nuca/presentation/match/swipe.screen.dart';
+import 'package:nuca/presentation/screens.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:sizer/sizer.dart';
 
@@ -31,7 +32,7 @@ class _NavbarBottomScreenState extends State<NavbarBottomScreen> {
   List<Widget> _buildScreens() => [
         const HomeScreen(),
         const HomeScreen(),
-        const HomeScreen(),
+        const TimelineScreen(),
         const ChatMenuScreen(),
         const HomeScreen(),
       ];
@@ -70,15 +71,9 @@ class _NavbarBottomScreenState extends State<NavbarBottomScreen> {
   Widget build(final BuildContext context) => Scaffold(
         body: PersistentTabView(
           onItemSelected: (final index) {
-            // setState(() {
-            //   _hideNavBar = true;
-            // });
             if (index == 1) {
               Get.to(() => SwipeScreen());
-              // _controller = PersistentTabController(initialIndex: 0);
             }
-            // }
-            // contro
           },
           context,
           controller: _controller,

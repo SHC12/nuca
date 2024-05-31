@@ -11,3 +11,4 @@ export 'package:nuca/infrastructure/navigation/bindings/controllers/quiz.control
 export 'package:nuca/infrastructure/navigation/bindings/controllers/registration.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/shared.controller.binding.dart'; 
 export 'package:nuca/infrastructure/navigation/bindings/controllers/splash.controller.binding.dart'; 
+export 'package:nuca/infrastructure/navigation/bindings/controllers/timeline.controller.binding.dart'; 

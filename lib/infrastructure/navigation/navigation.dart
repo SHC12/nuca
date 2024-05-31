@@ -93,5 +93,10 @@ class Nav {
       page: () => const ChatScreen(),
       binding: ChatControllerBinding(),
     ),
+    GetPage(
+      name: Routes.TIMELINE,
+      page: () => const TimelineScreen(),
+      binding: TimelineControllerBinding(),
+    ),
   ];
 }

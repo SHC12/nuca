@@ -7,6 +7,7 @@ class Routes {
 
   static const BOOST = '/boost';
   static const CALL = '/call';
+  static const CHAT = '/chat';
   static const FILTER = '/filter';
   static const HOME = '/home';
   static const LOGIN = '/login';
@@ -17,5 +18,5 @@ class Routes {
   static const REGISTRATION = '/registration';
   static const SHARED = '/shared';
   static const SPLASH = '/splash';
-  static const CHAT = '/chat';
+  static const TIMELINE = '/timeline';
 }

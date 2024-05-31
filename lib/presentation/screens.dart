@@ -11,3 +11,4 @@ export 'package:nuca/presentation/quiz/quiz.screen.dart';
 export 'package:nuca/presentation/registration/registration.screen.dart';
 export 'package:nuca/presentation/shared/shared.screen.dart';
 export 'package:nuca/presentation/splash/splash.screen.dart';
+export 'package:nuca/presentation/timeline/timeline.screen.dart';

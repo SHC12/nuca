@@ -33,7 +33,7 @@ class ChatsItemWidget extends StatelessWidget {
                   right: 0,
                   bottom: 0,
                   child: Container(
-                      padding: EdgeInsets.all(2.w),
+                      padding: EdgeInsets.all(1.6.w),
                       decoration: BoxDecoration(
                           border: Border.all(width: 2, color: Colors.white),
                           borderRadius: BorderRadius.circular(90.0),
