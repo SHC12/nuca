@@ -10,11 +10,6 @@ import 'package:sizer/sizer.dart';
 
 class MatchController extends GetxController {
   var overlayController = OverlayPortalController();
-  @override
-  void onInit() {
-    super.onInit();
-    // matchAnswerStart();
-  }
 
   matchAnswerStart() async {
     var duration = const Duration(seconds: 2);
@@ -45,13 +40,14 @@ class MatchController extends GetxController {
                         decoration: BoxDecoration(
                           color: whiteColor,
                           borderRadius: BorderRadius.circular(18),
-                          image: DecorationImage(image: AssetImage('assets/images/swipe_image.png'), fit: BoxFit.cover),
+                          image: const DecorationImage(
+                              image: AssetImage('assets/images/swipe_image.png'), fit: BoxFit.cover),
                         ),
                       ),
                       SizedBox(
                         height: 4.h,
                       ),
-                      Container(
+                      SizedBox(
                         height: 6.h,
                         width: 70.w,
                         child: ButtonWidget(
@@ -60,14 +56,14 @@ class MatchController extends GetxController {
                           color: whiteColor,
                           isColorTittleCustom: true,
                           onTap: () {
-                            Get.to(() => ChatScreen());
+                            Get.to(() => const ChatScreen());
                           },
                         ),
                       ),
                       SizedBox(
                         height: 2.h,
                       ),
-                      Container(
+                      SizedBox(
                         height: 6.h,
                         width: 70.w,
                         child: ButtonWidget(
@@ -117,7 +113,7 @@ class MatchController extends GetxController {
                                   decoration: BoxDecoration(
                                     color: whiteColor,
                                     borderRadius: BorderRadius.circular(18),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                         image: AssetImage('assets/images/avatar_sample.png'), fit: BoxFit.cover),
                                   ),
                                 ),
@@ -133,7 +129,7 @@ class MatchController extends GetxController {
                                     decoration: BoxDecoration(
                                       color: whiteColor,
                                       borderRadius: BorderRadius.circular(18),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                           image: AssetImage('assets/images/swipe_image.png'), fit: BoxFit.cover),
                                     ),
                                   ),
@@ -147,7 +143,7 @@ class MatchController extends GetxController {
                         height: 8.h,
                       ),
                       Center(
-                        child: Container(
+                        child: SizedBox(
                           height: 6.h,
                           width: 70.w,
                           child: ButtonWidget(
@@ -156,7 +152,7 @@ class MatchController extends GetxController {
                             color: whiteColor,
                             isColorTittleCustom: true,
                             onTap: () {
-                              Get.to(() => ChatScreen());
+                              Get.to(() => const ChatScreen());
                             },
                           ),
                         ),
@@ -165,7 +161,7 @@ class MatchController extends GetxController {
                         height: 2.h,
                       ),
                       Center(
-                        child: Container(
+                        child: SizedBox(
                           height: 6.h,
                           width: 70.w,
                           child: ButtonWidget(

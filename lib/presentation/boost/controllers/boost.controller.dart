@@ -12,7 +12,7 @@ class BoostController extends GetxController {
               subTitle: subtitle,
               onPressed: () {
                 Get.back();
-                Get.to(() => BoostScreen());
+                Get.to(() => const BoostScreen());
               },
             ));
   }

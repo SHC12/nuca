@@ -39,7 +39,8 @@ class _TimelineScreenState extends State<TimelineScreen> {
                           child: Container(
                               padding: EdgeInsets.symmetric(horizontal: 2.w, vertical: 1.h),
                               decoration: timelineController.isTimelineTab.value
-                                  ? BoxDecoration(color: Color(0xFFADB6E2), borderRadius: BorderRadius.circular(18))
+                                  ? BoxDecoration(
+                                      color: const Color(0xFFADB6E2), borderRadius: BorderRadius.circular(18))
                                   : null,
                               child: Text(
                                 'Timeline',
@@ -58,7 +59,8 @@ class _TimelineScreenState extends State<TimelineScreen> {
                               padding: EdgeInsets.symmetric(horizontal: 2.w, vertical: 1.h),
                               decoration: timelineController.isTimelineTab.value
                                   ? null
-                                  : BoxDecoration(color: Color(0xFFADB6E2), borderRadius: BorderRadius.circular(18)),
+                                  : BoxDecoration(
+                                      color: const Color(0xFFADB6E2), borderRadius: BorderRadius.circular(18)),
                               child: Text(
                                 'Family',
                                 style: defaultSubTextStyle.copyWith(
@@ -70,7 +72,7 @@ class _TimelineScreenState extends State<TimelineScreen> {
                     SizedBox(
                       height: 2.h,
                     ),
-                    timelineController.isTimelineTab.value ? TimelineListWidget() : FamilyListWidget()
+                    timelineController.isTimelineTab.value ? const TimelineListWidget() : const FamilyListWidget()
                   ],
                 ),
               ),

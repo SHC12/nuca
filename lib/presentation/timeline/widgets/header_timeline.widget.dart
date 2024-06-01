@@ -1,7 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
-import 'package:nuca/infrastructure/theme/fonts.dart';
 import 'package:nuca/presentation/boost/controllers/boost.controller.dart';
 import 'package:nuca/presentation/screens.dart';
 import 'package:remixicon_updated/remixicon_updated.dart';

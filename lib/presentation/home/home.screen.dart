@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: EdgeInsets.symmetric(vertical: 4.h, horizontal: 4.w),
       child: SingleChildScrollView(
         child: Column(
-          children: [HeaderWidget(), PeopleListWidget()],
+          children: [HeaderWidget(), const PeopleListWidget()],
         ),
       ),
     ));

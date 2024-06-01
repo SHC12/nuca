@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/infrastructure/theme/fonts.dart';
-import 'package:remixicon_updated/remixicon_updated.dart';
 import 'package:sizer/sizer.dart';
 
 class FamilyItemWidget extends StatelessWidget {
@@ -56,7 +55,7 @@ class FamilyItemWidget extends StatelessWidget {
                     ),
                     child: Row(children: [
                       ImageIcon(
-                        AssetImage('assets/images/navbar_icons/profile_icon_inactive.png'),
+                        const AssetImage('assets/images/navbar_icons/profile_icon_inactive.png'),
                         size: 8.sp,
                         color: whiteColor,
                       ),

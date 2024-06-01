@@ -25,11 +25,11 @@ class _FamilyListWidgetState extends State<FamilyListWidget> {
           SizedBox(
             height: 2.h,
           ),
-          FamilyItemWidget(
+          const FamilyItemWidget(
             avatar: 'assets/images/family_viral_2.png',
             name: 'Cerita Sebelum Bobo',
           ),
-          FamilyItemWidget(
+          const FamilyItemWidget(
             avatar: 'assets/images/family_viral_1.png',
             name: 'Horror Story',
           ),
@@ -43,11 +43,11 @@ class _FamilyListWidgetState extends State<FamilyListWidget> {
           SizedBox(
             height: 2.h,
           ),
-          FamilyItemWidget(
+          const FamilyItemWidget(
             avatar: 'assets/images/family_most_see_2.png',
             name: 'Flat Earth',
           ),
-          FamilyItemWidget(
+          const FamilyItemWidget(
             avatar: 'assets/images/family_most_see_1.png',
             name: 'Curhatan 2023',
           ),

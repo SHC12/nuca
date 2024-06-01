@@ -1,11 +1,7 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
 import 'package:nuca/presentation/chat/chat_menu.screen.dart';
-import 'package:nuca/presentation/home/home.screen.dart';
-import 'package:nuca/presentation/match/match.screen.dart';
 import 'package:nuca/presentation/match/swipe.screen.dart';
 import 'package:nuca/presentation/screens.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -72,7 +68,7 @@ class _NavbarBottomScreenState extends State<NavbarBottomScreen> {
         body: PersistentTabView(
           onItemSelected: (final index) {
             if (index == 1) {
-              Get.to(() => SwipeScreen());
+              Get.to(() => const SwipeScreen());
             }
           },
           context,

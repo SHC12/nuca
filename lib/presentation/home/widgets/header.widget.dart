@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
@@ -55,11 +57,8 @@ class HeaderWidget extends StatelessWidget {
                   },
                   child: Container(
                     height: 10.h,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
-                    decoration: BoxDecoration(
-                        color: primaryColor,
-                        borderRadius: BorderRadius.circular(18)),
+                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -72,8 +71,7 @@ class HeaderWidget extends StatelessWidget {
                         ),
                         Text(
                           'Quiz',
-                          style: defaultBoldTextStyle.copyWith(
-                              color: greyTextColor3, fontSize: 14.sp),
+                          style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
                         )
                       ],
                     ),
@@ -86,15 +84,12 @@ class HeaderWidget extends StatelessWidget {
                 flex: 1,
                 child: GestureDetector(
                   onTap: () {
-                    Get.to(() => MatchScreen());
+                    Get.to(() => const MatchScreen());
                   },
                   child: Container(
                     height: 10.h,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
-                    decoration: BoxDecoration(
-                        color: primaryColor,
-                        borderRadius: BorderRadius.circular(18)),
+                    padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+                    decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(18)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -107,8 +102,7 @@ class HeaderWidget extends StatelessWidget {
                         ),
                         Text(
                           'Match',
-                          style: defaultBoldTextStyle.copyWith(
-                              color: greyTextColor3, fontSize: 14.sp),
+                          style: defaultBoldTextStyle.copyWith(color: greyTextColor3, fontSize: 14.sp),
                         )
                       ],
                     ),

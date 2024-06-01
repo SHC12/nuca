@@ -24,7 +24,7 @@ class _SwipeScreenState extends State<SwipeScreen> {
         padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 6.h),
         width: double.infinity,
         height: 200.w,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
           image: AssetImage(
             'assets/images/swipe_image.png',
@@ -40,7 +40,7 @@ class _SwipeScreenState extends State<SwipeScreen> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Get.offAll(() => NavbarBottomScreen());
+                    Get.offAll(() => const NavbarBottomScreen());
                   },
                   child: Icon(
                     Remix.arrow_left_s_line,
@@ -51,7 +51,7 @@ class _SwipeScreenState extends State<SwipeScreen> {
                 Image.asset('assets/images/logo_text_white.png', scale: 02),
                 GestureDetector(
                   onTap: () {
-                    Get.to(() => ChatScreen());
+                    Get.to(() => const ChatScreen());
                   },
                   child: Icon(
                     Remix.chat_1_line,
@@ -151,23 +151,23 @@ class _SwipeScreenState extends State<SwipeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     CircleAvatar(
-                      backgroundColor: Color(0xFFECEFFD),
+                      backgroundColor: const Color(0xFFECEFFD),
                       radius: 20.sp,
                       child: IconButton(
                         padding: EdgeInsets.zero,
-                        icon: Icon(Remix.arrow_go_back_line),
-                        color: Color(0xFF6691FF),
+                        icon: const Icon(Remix.arrow_go_back_line),
+                        color: const Color(0xFF6691FF),
                         iconSize: 25.sp,
                         onPressed: () {},
                       ),
                     ),
                     CircleAvatar(
-                      backgroundColor: Color(0xFFECEFFD),
+                      backgroundColor: const Color(0xFFECEFFD),
                       radius: 20.sp,
                       child: IconButton(
                         padding: EdgeInsets.zero,
-                        icon: Icon(Remix.close_line),
-                        color: Color(0xFFFF0000),
+                        icon: const Icon(Remix.close_line),
+                        color: const Color(0xFFFF0000),
                         iconSize: 25.sp,
                         onPressed: () {},
                       ),
@@ -185,12 +185,12 @@ class _SwipeScreenState extends State<SwipeScreen> {
                           )),
                     ),
                     CircleAvatar(
-                      backgroundColor: Color(0xFFECEFFD),
+                      backgroundColor: const Color(0xFFECEFFD),
                       radius: 20.sp,
                       child: IconButton(
                         padding: EdgeInsets.zero,
-                        icon: Icon(Remix.heart_3_fill),
-                        color: Color(0xFFFF3495),
+                        icon: const Icon(Remix.heart_3_fill),
+                        color: const Color(0xFFFF3495),
                         iconSize: 25.sp,
                         onPressed: () {
                           matchController.matchSuper();
@@ -198,7 +198,7 @@ class _SwipeScreenState extends State<SwipeScreen> {
                       ),
                     ),
                     CircleAvatar(
-                        backgroundColor: Color(0xFFECEFFD),
+                        backgroundColor: const Color(0xFFECEFFD),
                         radius: 20.sp,
                         child: Image.asset(
                           'assets/images/warning.png',

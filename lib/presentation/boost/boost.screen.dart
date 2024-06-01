@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 
 import 'package:get/get.dart';
 import 'package:nuca/infrastructure/theme/colors.dart';
@@ -28,7 +27,7 @@ class BoostScreen extends GetView<BoostController> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(),
+                const SizedBox(),
                 Text(
                   'BOOST STOCK',
                   style: whiteTextStyle.copyWith(fontWeight: FontWeight.bold, fontSize: 16.sp),
@@ -37,7 +36,7 @@ class BoostScreen extends GetView<BoostController> {
                     onTap: () {
                       Get.back();
                     },
-                    child: Icon(Remix.close_line, color: whiteColor))
+                    child: const Icon(Remix.close_line, color: whiteColor))
               ],
             ),
           ),
@@ -56,9 +55,9 @@ class BoostScreen extends GetView<BoostController> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(28),
                         gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
-                          Color(0xFFFFFFFF).withOpacity(0.31),
-                          Color(0xFFFFFFFF).withOpacity(0.69),
-                          Color(0xFF999999).withOpacity(0.58),
+                          const Color(0xFFFFFFFF).withOpacity(0.31),
+                          const Color(0xFFFFFFFF).withOpacity(0.69),
+                          const Color(0xFF999999).withOpacity(0.58),
                         ])),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,9 +90,9 @@ class BoostScreen extends GetView<BoostController> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(28),
                         gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
-                          Color(0xFFFFFFFF).withOpacity(0.31),
-                          Color(0xFFFFFFFF).withOpacity(0.69),
-                          Color(0xFF999999).withOpacity(0.58),
+                          const Color(0xFFFFFFFF).withOpacity(0.31),
+                          const Color(0xFFFFFFFF).withOpacity(0.69),
+                          const Color(0xFF999999).withOpacity(0.58),
                         ])),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -152,7 +151,7 @@ class BoostScreen extends GetView<BoostController> {
             height: 4.h,
           ),
           Center(
-            child: Container(
+            child: SizedBox(
               width: 30.w,
               child: ButtonWidget(
                 color: Colors.transparent,

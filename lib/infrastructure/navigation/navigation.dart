@@ -85,7 +85,7 @@ class Nav {
     ),
     GetPage(
       name: Routes.MATCH,
-      page: () => MatchScreen(),
+      page: () => const MatchScreen(),
       binding: MatchControllerBinding(),
     ),
     GetPage(

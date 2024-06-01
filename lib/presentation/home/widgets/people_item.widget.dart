@@ -8,7 +8,7 @@ class PeopleItemWidget extends StatelessWidget {
   final String? avatar;
   final String? name;
   final String? status;
-  PeopleItemWidget({super.key, this.avatar, this.name, this.status});
+  const PeopleItemWidget({super.key, this.avatar, this.name, this.status});
 
   @override
   Widget build(BuildContext context) {

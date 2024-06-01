@@ -121,7 +121,7 @@ class TimelineItemWidget extends StatelessWidget {
                 SizedBox(
                   height: 0.5.h,
                 ),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: isImageOnly == true
                       ? Image.asset(
@@ -138,21 +138,21 @@ class TimelineItemWidget extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Remix.heart_3_line,
                       color: greyColor,
                     ),
                     SizedBox(
                       width: 2.w,
                     ),
-                    Icon(
+                    const Icon(
                       Remix.chat_3_line,
                       color: greyColor,
                     ),
                     SizedBox(
                       width: 2.w,
                     ),
-                    Icon(
+                    const Icon(
                       Remix.share_forward_line,
                       color: greyColor,
                     ),

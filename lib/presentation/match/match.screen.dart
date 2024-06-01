@@ -9,14 +9,23 @@ import 'package:sizer/sizer.dart';
 
 import 'controllers/match.controller.dart';
 
-class MatchScreen extends GetView<MatchController> {
-  MatchScreen({Key? key}) : super(key: key);
+class MatchScreen extends StatefulWidget {
+  const MatchScreen({super.key});
 
+  @override
+  State<MatchScreen> createState() => _MatchScreenState();
+}
+
+class _MatchScreenState extends State<MatchScreen> {
   MatchController matchController = Get.put(MatchController());
+  @override
+  void initState() {
+    super.initState();
+    matchController.matchAnswerStart();
+  }
 
   @override
   Widget build(BuildContext context) {
-    controller;
     return Scaffold(
       backgroundColor: splashColor,
       body: Column(
